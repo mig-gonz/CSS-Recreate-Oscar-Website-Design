@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav button {
+  color: white;
+  background: black;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+nav button:hover {
+  border-top: solid 3px white;
+}
+/* entire header */
+header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* nav */
+#nav-wrapper {
+  margin-left: 50em;
+}
+
+/* language drop down button */
+.lang-container {
+  position: relative;
+  display: inline-block;
+}
+.language-btn {
+  height: 100%;
+}
+.lang-content {
+  display: none;
+  position: absolute;
+  background-color: blanchedalmond;
+  color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.lang-content a {
+  color: orange;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.lang-container:hover .lang-content {
+  display: block;
+}
+
+/* log in content */
+.log-in {
+  position: relative;
+  display: inline-block;
+}
+.log-in-btn {
+  height: 100%;
+}
+.log-in-content {
+  display: none;
+  position: absolute;
+  background-color: blanchedalmond;
+  color: black;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+.log-in-content a {
+  color: orange;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+}
+.log-in:hover .log-in-content {
+  display: block;
+}
